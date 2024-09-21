@@ -1,0 +1,14 @@
+
+<app-contador/>
+<app-hijo 
+[recibeHijo]="mensajePadre" 
+(mensajeDesdeHijo)="recibirMensaje($event)"
+(incrementarDesdeHijo)="incrementar()"
+(decrementarDesdeHijo)="decrementar()"
+/>
+
+<p>El mensaje recibido desde el hijo es: {{reciboMensaje}}</p>
+<p>El valor del contador padre es recibe el evento desde el hijo y resuelve en el padre: {{valorContadorPadre}}</p>
+<h1>Usando servicios desde padre: {{nombre}}</h1>
+<button type="button" (click)="saludar()">saludar</button>
+<button type="button" (click)="preguntar()">preguntar desde padre</button>

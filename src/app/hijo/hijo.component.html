@@ -1,0 +1,13 @@
+<p>El mensaje enviado desde el padre fue</p>
+<p>{{recibeHijo}}</p>
+
+<div>
+    <label for="entrada">Escribí un msg paar el padre</label>
+    <input type="text" id="entrada" [(ngModel)]="mensaje">
+    <button type="button" (click)="enviarMensaje()">Enviar mensaje</button>
+</div>
+<div>
+    
+<button (click)="incrementar()">Incrementar btn en el hijo</button>
+<button (click)="decrementar()">Decrementar btn en el hijo</button>
+</div>
